@@ -8,5 +8,5 @@
     "example": "node ./index.js yaml --dry-run example/example-soundtrack/disk1 example/example-config.yaml"
   },
   "author": "Nathan McWilliams",
-  "license": "ISC"
+  "license": "MIT"
 }
