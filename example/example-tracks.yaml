@@ -1,0 +1,7 @@
+- disk1:
+    directory: 'disk 1'
+    disk: 1
+    names:
+      - My Track A
+      - My Track B
+      - My Track C

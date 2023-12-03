@@ -1,0 +1,12 @@
+{
+  "name": "batch-rename-tracks",
+  "version": "0.0.1",
+  "description": "Rename music track files",
+  "main": "index.js",
+  "scripts": {
+    "help": "node ./index.js --help",
+    "dry-run": "node --dry-run ./index.js"
+  },
+  "author": "Nathan McWilliams",
+  "license": "ISC"
+}
