@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "help": "node ./index.js --help",
-    "dry-run": "node --dry-run ./index.js"
+    "example": "node ./index.js yaml --dry-run example/example-soundtrack/disk1 example/example-config.yaml"
   },
   "author": "Nathan McWilliams",
   "license": "ISC"
