@@ -2,14 +2,13 @@
   "name": "batch-rename-tracks",
   "version": "0.0.1",
   "description": "Rename music track files",
+  "author": "Nathan McWilliams",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "help": "node ./index.js --help",
-    "yaml": "node ./index.js yaml --help",
     "example": "node ./index.js yaml --dry-run -d 1 example/example-soundtrack/disk1 example/example-config.yaml"
   },
-  "author": "Nathan McWilliams",
-  "license": "MIT",
   "dependencies": {
     "commander": "^11.1.0",
     "js-yaml": "^4.1.0"
