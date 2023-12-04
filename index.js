@@ -17,15 +17,22 @@ program
     '-c, --dry-run',
     'check the outcome of the given arguments without performing any changes'
   )
-  .option('-d, --disk <number>', 'disk number')
+  .option(
+    '-d, --disk <number>',
+    'prefix the track number with this disk number'
+  )
+  .option(
+    '-a, --auto-disk',
+    'use the first number in the directory name as disk number'
+  )
   .option(
     '--disk-suffix <string>',
-    'the characters between disk and track number',
+    'insert these characters between disk and track number',
     'x'
   )
   .option(
     '--number-suffix <string>',
-    'the characters between the track number and track name',
+    'insert these characters between the track number and track name',
     ' - '
   )
   .action((dir, config, options) => {
