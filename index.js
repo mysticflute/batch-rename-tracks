@@ -10,11 +10,11 @@ program
 program
   .command('yaml')
   .description('rename files according to a yaml config file')
-  .argument('<dir>', 'directory containing the files to rename')
   .argument(
     '<config>',
     'yaml file containing an ordered list of new track names'
   )
+  .argument('<dir>', 'directory containing the files to rename')
   .option(
     '-c, --dry-run',
     'check the outcome of the given arguments without performing any changes'
