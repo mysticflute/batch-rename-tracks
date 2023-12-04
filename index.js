@@ -1,11 +1,9 @@
 const { program } = require('commander');
-const byYaml = require('./lib/rename-by-yaml');
+const renameByYamlConfig = require('./lib/rename-by-yaml');
 
 program
   .name('batch-rename-tracks')
   .description('CLI to rename multiple music track files');
-
-program.showHelpAfterError();
 
 program
   .command('yaml')
@@ -19,9 +17,9 @@ program
     '-t, --dry-run',
     'display the outcome of the given arguments without performaning any changes'
   )
-  .option('-d, --disk-number <number>', 'disk number')
+  .option('-n, --disk <number>', 'disk number')
   .option(
-    '-s, --disk-separator <string>',
+    '-d, --disk-suffix <string>',
     'the characters between disk and track number',
     'x'
   )
@@ -32,7 +30,7 @@ program
   )
   .action((dir, config, options) => {
     try {
-      byYaml.rename(dir, config, options);
+      renameByYamlConfig.rename(dir, config, options);
     } catch (e) {
       program.error(e);
     }
