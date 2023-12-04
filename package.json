@@ -10,10 +10,14 @@
   },
   "scripts": {
     "help": "node ./index.js --help",
-    "example": "node ./index.js yaml --dry-run -d 1 example/example-soundtrack/disk1 example/example-config.yaml"
+    "example-single": "node ./index.js yaml --dry-run --disk 1 examples/single-disk/soundtrack examples/single-disk/config.yaml",
+    "example-multi": "node ./index.js yaml --dry-run --auto-disk examples/multi-disk/soundtrack/disk2 examples/multi-disk/config.yaml"
   },
   "dependencies": {
     "commander": "^11.1.0",
     "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
