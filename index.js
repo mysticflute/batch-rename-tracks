@@ -14,17 +14,17 @@ program
     'yaml file containing an ordered list of new track names'
   )
   .option(
-    '-t, --dry-run',
-    'display the outcome of the given arguments without performaning any changes'
+    '-c, --dry-run',
+    'check the outcome of the given arguments without performing any changes'
   )
-  .option('-n, --disk <number>', 'disk number')
+  .option('-d, --disk <number>', 'disk number')
   .option(
-    '-d, --disk-suffix <string>',
+    '--disk-suffix <string>',
     'the characters between disk and track number',
     'x'
   )
   .option(
-    '-t, --track-suffix <string>',
+    '--number-suffix <string>',
     'the characters between the track number and track name',
     ' - '
   )

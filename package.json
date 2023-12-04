@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "help": "node ./index.js --help",
-    "yaml": "node ./index.js yaml",
-    "example": "node ./index.js yaml --dry-run example/example-soundtrack/disk1 example/example-config.yaml"
+    "yaml": "node ./index.js yaml --help",
+    "example": "node ./index.js yaml --dry-run -d 1 example/example-soundtrack/disk1 example/example-config.yaml"
   },
   "author": "Nathan McWilliams",
   "license": "MIT",
