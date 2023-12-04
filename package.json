@@ -5,6 +5,9 @@
   "author": "Nathan McWilliams",
   "license": "MIT",
   "main": "index.js",
+  "bin": {
+    "batch-rename": "index.js"
+  },
   "scripts": {
     "help": "node ./index.js --help",
     "example": "node ./index.js yaml --dry-run -d 1 example/example-soundtrack/disk1 example/example-config.yaml"
