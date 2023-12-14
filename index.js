@@ -4,7 +4,7 @@ const { program } = require('commander');
 const renameByYamlConfig = require('./lib/rename-by-yaml');
 
 program
-  .name('batch-rename-tracks')
+  .name('batch-rename')
   .description('CLI to rename multiple music track files');
 
 program
